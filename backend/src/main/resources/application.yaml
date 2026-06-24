@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: digital-whiteboard-api
+
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/digital_whiteboard}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080

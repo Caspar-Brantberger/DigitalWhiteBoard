@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: digital-whiteboard-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: digital_whiteboard
+      POSTGRES_USER: digital_whiteboard
+      POSTGRES_PASSWORD:
+    ports:
+      - "5432:5432"
+    volumes:
+      - digital_whiteboard_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U digital_whiteboard -d digital_whiteboard"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  digital_whiteboard_data:
