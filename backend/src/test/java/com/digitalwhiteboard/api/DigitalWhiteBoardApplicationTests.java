@@ -1,10 +1,10 @@
-package com.digitalwhiteboard.demo;
+package com.digitalwhiteboard.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class DigitalWhiteBoardApplicationTests {
 
 	@Test
 	void contextLoads() {

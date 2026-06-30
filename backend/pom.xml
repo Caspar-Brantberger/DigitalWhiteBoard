@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.digitalwhiteboard</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>digital-whiteboard-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>DigitalWhiteBoard API</name>
+	<description>Spring Boot API for the DigitalWhiteBoard project management app.</description>
 	<url/>
 	<licenses>
 		<license/>

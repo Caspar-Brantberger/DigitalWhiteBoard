@@ -1,4 +1,4 @@
-package com.digitalwhiteboard.demo.config;
+package com.digitalwhiteboard.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
