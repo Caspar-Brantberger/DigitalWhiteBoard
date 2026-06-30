@@ -4,8 +4,8 @@ spring:
 
   datasource:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/digital_whiteboard}
-    username: ${DATABASE_USERNAME:postgres}
-    password: ${DATABASE_PASSWORD}
+    username: ${DATABASE_USERNAME:digital_whiteboard}
+    password: ${DATABASE_PASSWORD:digital_whiteboard}
 
   jpa:
     hibernate:
